@@ -1,0 +1,2 @@
+# changebot
+bitChangeBot on Ruby
