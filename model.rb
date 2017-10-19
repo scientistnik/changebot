@@ -4,7 +4,7 @@ module Model
 	class << self
 		def init_db 
 			@db = SQLite3::Database.new 'data.db'
-			f = File.open 'init.db','r'
+			f = File.open 'init.sql','r'
 			f.read.split(';').each do |sql|
 				next if sql == "\n"
 				@db.execute sql+';'
